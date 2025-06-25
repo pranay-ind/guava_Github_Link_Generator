@@ -1,0 +1,14 @@
+{
+  "name": "neog-starter",
+  "version": "1.0.0",
+  "description": "A minimal template to learn semantic web dev",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve"
+  },
+  "keywords": ["html", "css"],
+  "author": "tanaypratap",
+  "devDependencies": {
+    "serve": "11.2.0"
+  }
+}

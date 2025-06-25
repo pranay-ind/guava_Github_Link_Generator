@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="description"
+      content="get your github link from just your username"
+    />
+    <title>Github URL Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="container">
+      <hgroup>
+        <h1>Github Url Generator</h1>
+        <p>get your github link just from your url</p>
+      </hgroup>
+    </header>
+    <main class="container">
+      <fieldset role="group">
+        <input
+          type="text"
+          id="githubInput"
+          placeholder="Enter Github Username"
+        />
+        <input type="submit" value="Generate Url" id="generateBtn" />
+      </fieldset>
+      <div id="app"></div>
+    </main>
+    <footer class="container neog-footer">
+      <small>
+        go from zero to hero at full stack development with
+        <a href="https://neog.camp">neog.camp</a>
+      </small>
+    </footer>
+    <script>
+      // getGithubUrl takes githubUser as a parameter and return github link + user name
+      function getGithubUrl(githubUser) {
+        return "https://github.com/" + githubUser;
+      }
+
+      // handleGenerateClick execute when button is clicked
+      function handleGenerateClick() {
+        const githubUrl = getGithubUrl(inputElement.value);
+        appElement.innerText = githubUrl; // all the content shown in appElement variable
+      }
+      // Reading the value
+      const inputElement = document.getElementById("githubInput");
+      const buttonElement = document.getElementById("generateBtn");
+      const appElement = document.getElementById("app");
+
+      // Adding event listener to button
+      buttonElement.addEventListener("click", handleGenerateClick);
+    </script>
+  </body>
+</html>
