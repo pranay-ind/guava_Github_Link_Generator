@@ -1,6 +1,6 @@
 # guava_Github_Link_Generator
 ## About the project
-This is a micro app that lets you add your GitHub username in the input box and generate a link of your Github
+This is a micro app that lets you add your GitHub username in the input box and generate a link of your Github.
 
 ## Steps to follow
 1. Fork this repo.
